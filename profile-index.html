@@ -1,0 +1,529 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>profile page</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Inknut+Antiqua|Dancing+Script|Courgette&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"><!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="profile-css/profile-stylesheet.css" type="text/css" />
+	<link rel="stylesheet" href="profile-css/mq-stylesheet.css" type="text/css" />
+	
+</head>
+<body>
+<div id="page-container">
+	<!--Nav bar starts-->
+	<nav id="header" class="navbar navbar-expand-md">
+		<h1 class="square"><a class="navbar-brand tenth before after" href="#home-section">Luis C. Solorio</a></h1>	
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+			<span class="navbar-toggler-icon">&equiv;</span>
+		</button>
+		<div id="nav-buttons" class="btn-group" role="group" aria-label="nav buttons">
+			<a href="https://www.instagram.com/s.louis66/" target="_blank" role="button" class="btn"><span class="fa fa-instagram"></span></a>
+			<a data-toggle="modal" data-target="#snapModal" role="button" class="btn"><span class="fa fa-snapchat"></span></a>
+				
+			<a href="https://www.youtube.com/channel/UC-B_ZhBO8-FbWAOzw-ZE6QA" target="_blank" role="button" class="btn"><span class="fa fa-youtube"></span></a>
+			<a href="https://www.linkedin.com/in/luis-solorio-71807a154/" target="_blank" role="button" class="btn"><span class="fa fa-linkedin"></span></a>
+		</div>
+		<div class="collapse navbar-collapse" id="navbarCollapse">
+			<ul class="navbar-nav">
+				<li class="nav-item"><a href="#home-section" class="nav-link second after">Home</a></li>
+				<li class="nav-item"><a href="#block1" class="nav-link second after">Contact</a></li>
+				<li class="nav-item"><a href="#about-section" class="nav-link second after">About Me</a></li>
+				<li class="nav-item"><a href="#projects-section" class="nav-link second after">Projects</a></li>
+				<li class="nav-item"><a href="#skills-section" class="nav-link second after">Skills</a></li>
+			</ul>
+		</div>
+	</nav>
+	<!--Main content starts-->		
+	<div id="content" class="container-fluid p-0 m-0">
+		<!--snapchat modal for small devices-->
+			<div class="modal" id="snapModal">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title">Snapcode <small>(Take a screenshot)</small></h4>
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+						</div>
+						<div class="modal-body">
+							<img src="images/snapcode.png" alt="snapcode image" />
+						</div>
+						<div class="modal-footer tex-center">
+							<p>solorioluis66</p>
+							<button type="button" class="btn" data-dismiss="modal">
+								Close
+							</button>
+						</div>
+					</div>
+				</div>
+			</div><!--end modal-->
+		<!--Banner starts-->
+		<div id="home-section" class="container-fluid m-0">
+			<div id="banner-container" class="row">
+				<div id="banner" class="col-sm-6">		
+				</div>
+				<div class="col-sm-6 d-flex w-100" style="justify-content:center;align-items:center;">
+					<h2 id="banner-h2" class="">Love all,<br> trust a few,<br> do wrong to none.<br>
+						-William Shakespeare<br>&there4;
+					</h2>
+				</div>
+			</div>
+		</div>
+		<div id="block1" class="row m-0">
+			<div id="contact-left" class="col-sm text-center">
+				<div id="image-card" class="card mx-auto mt-5">
+					<img class="card-img-top" src="images/profile-image-full.jpg" alt="Profile Picture">
+					<div class="btn-group">
+						<a href="tel:7049152506" class="btn w-50 rounded-0"><span class="fa fa-phone" aria-hidden="true"></span></a>
+						<a href="mailto:solorio.luis1966@gmail.com" class="btn w-50 rounded-0"><span class="fa fa-envelope" aria-hidden="true"></span></a>
+					</div>
+				</div>
+				<p class="mt-1"><strong>Location:</strong> Stanfield, NC</p>
+				<p><strong>Hogwarts House:</strong> Ravenclaw</p>
+			</div>
+			<div id="contact-right" class="col-sm animation-element text-center">
+				<h2><span id="fadein-contact1">Web Development,</span> <span id="fadein-contact2">Digital Marketing,</span> <span id="fadein-contact3">Furniture Refinish</span></h2>
+				<hr id="contact-hr" class="hr-bio">
+				<p>Ready to start your next project? Click the buttons under the profile pic to call or email me and I will get to you as soon as possible, thank you!</p>
+			</div>
+		</div>
+		<div id="animation-tab">
+			<div style="font-size:35px;"><a id="contact-me-hover">&nldr;</a></div>
+		</div>
+		<!--About Me section starts -->
+		<div id="about-section" class="row d-inline-flex">
+			<div class="animation-element bounce-up col-sm">
+				<h1 class="subject about-me">About Me</h1>
+			</div>
+		</div>
+		<br>
+		<p class="about-me-description">(<i>Global Dance Music Festival 2017, Colorado</i> <strong class="about-descript">- Hover Over</strong>)</p>
+			
+		<div class="about-me-flex row">
+			<div class="column col-sm" style="max-height:100%">
+					<div class="am-link-container blur" style="height:49%;font-size:1.15em;">
+						<img src="images/global1.jpg" class="image" alt="global1" style="width:100%">
+						<div class="middle">
+							<div class="text"><a>Music</a></div>
+						</div>
+						<div class="overlay">
+							<a href="#" class="icon-locked" title="In Progress">
+								<span class="fa fa-lock"></span>
+							</a>
+						</div>
+					</div>	
+					<div class="am-link-container blur" style="height:49%;font-size:1.15em;">
+						<img src="images/global2.jpg" class="image" alt="global2" style="width:100%">
+						<div class="middle">
+							<div class="text"><a>Adventures & EDM Festivals</a></div>
+						</div>
+						<div class="overlay">
+							<a href="#" class="icon-locked" title="In Progress">
+								<span class="fa fa-lock"></span>
+							</a>
+						</div>
+					</div>	
+			</div>
+			<div class="column col-sm" style="max-height: 100%;">
+					<div class="am-link-container blur" style="height:32.4%;">
+						<img src="images/global (27).jpg" class="image" alt="global3" style="width:100%">
+						<div class="middle">
+							<div class="text"><a>Good Reads</a></div>
+						</div>
+						<div class="overlay">
+							<a href="#" class="icon-locked" title="In Progress">
+								<span class="fa fa-lock"></span>
+							</a>
+						</div>
+					</div>	
+					<div class="am-link-container blur" style="height:32.4%;">
+						<a href="#skills-section">
+							<img src="images/global (28).jpg" class="image" alt="global4" style="width">
+							<div class="middle">
+								<div class="text"><a href="#skills-section">Skills</a></div>
+							</div>
+						</a>
+					</div>	
+					<div class="am-link-container blur" style="height:32.4%;">
+						<a href="#projects-section">
+							<img src="images/global (29).jpg" class="image" alt="global5" style="width:100%">
+							<div class="middle">
+								<div class="text"><a href="#projects-section">Projects</a></div>
+							</div>
+						</a>
+					</div>	
+			</div>
+			<div class="column col-sm" style="max-height: 100%;">
+				<div class="am-link-container blur" style="height:49%;font-size:1.15em;">
+					<img src="images/global (35).jpg" class="image" alt="global6" style="width:100%">
+					<div class="middle">
+						<div class="text"><a>Running</a></div>
+					</div>
+					<div class="overlay">
+						<a href="#" class="icon-locked" title="In Progress">
+							<span class="fa fa-lock"></span>
+						</a>
+					</div>
+				</div>	
+				<div class="am-link-container blur" style="height:49%;font-size:1.15em;">
+					<img src="images/global1.jpg" class="image" alt="global7" style="width:100%">
+					<div class="middle">
+						<div class="text"><a>Other Things </a></div>
+					</div>
+					<div class="overlay">
+						<a href="#" class="icon-locked" title="In Progress">
+							<span class="fa fa-lock"></span>
+						</a>
+					</div>
+				</div>	
+			</div>
+			<div class="column col-sm" style="max-height:100%;">
+				<a href="#about-section">
+					<div class="am-link-container blur" style="height:98.9%">
+						<img src="images/global (31).jpg" class="image" alt="global8" style="width:100%">
+						<div class="middle">
+							<div class="text"><a href="#about-section">About Me</a></div>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+		<br>
+		<br>
+		<!--testimonials part starts-->
+		<!--<div class="row">
+			<div class="col-sm">sfgbfb</div>
+			<div class="col-sm">fgbfsb</div>
+			<div class="col-sm">sfgbfgb</div>
+			<div class="col-sm">fgbsfb</div>
+		<div>-->
+		<br>
+		<hr id="projects-section" class="hr-bio">
+		<br>
+		<!--project section headings-->
+		<div class="projects row m-0 mt-5">
+			<a>		
+				<div class="box projects-others col-sm" style="color: #ffdb4d;">
+					<h1 style="color: #ffdb4d;">Projects :<br> Others</h1>
+					<!--slider starts-->
+					<div class="slideshow-container">
+						<div class="mySlides fade-car">
+							<div class="project-text">
+								<img src="images/colorado_view2.jpg" class="slideshow-img img-fluid" alt="global6" />
+								<p class="slide-hover-p"><i>()</i></p>
+							</div>
+						</div>
+						<div class="mySlides fade-car">
+							<div class="project-text">
+								<img src="images/global (35).jpg" class="slideshow-img img-fluid" alt="global6" />
+								<p class="slide-hover-p"><i>()</i></p>
+							</div>
+						</div>
+						<div class="mySlides fade-car">
+							<div class="project-text">
+								<img src="images/colorado_view.jpg" class="slideshow-img img-fluid" alt="global6" />
+								<p class="slide-hover-p"><i>()</i></p>
+							</div>
+						</div>			
+						<a id="p-others" class="previous" onclick="plusSlides(-1)">&#10094;</a>
+						<a id="n-others" class="nexxt" onclick="plusSlides(1)">&#10095;</a>
+						<span class="dot" onclick="currentSlide(1)"></span>
+						<span class="dot" onclick="currentSlide(2)"></span>
+						<span class="dot" onclick="currentSlide(3)"></span>
+					</div><!--slideshow ends-->
+					<br><br>
+					<div class="w-100 text-center">
+						<a id="others-etsy-btn" href="#" class="btn" role="button">My Etsy Store <span class="fa fa-etsy"></span></a>
+					</div>
+				</div>	
+			</a>
+			<a>
+				<div class="box projects-coding col-sm" style="color:#00004d;">
+					<h1 style="color:#00004d;">Projects :<br> Coding</h1>
+					<!--second slider starts-->
+					<div class="slideshow-container">
+						<div class="mySlides2 fade-car">
+							<div class="project-text">
+								<img src="images/profile-website.png" class="slideshow-img img-fluid" alt="global6" />
+								<p class="slide-hover-p"><i>(My Profile Webpage)</i></p>
+							</div>
+						</div>
+						<div class="mySlides2 fade-car">
+							<div class="project-text">
+								<img src="images/global (35).jpg" class="slideshow-img img-fluid" alt="global6" />
+								<p class="slide-hover-p"><i>()</i></p>
+							</div>
+						</div>
+						<div class="mySlides2 fade-car">
+							<div class="project-text">
+								<img src="images/global8.jpg" class="slideshow-img img-fluid" alt="global6" />
+								<p class="slide-hover-p"><i>()</i></p>
+							</div>
+						</div>	
+						<a id="p-coding" class="previous" onclick="plusSlides2(-1)">&#10094;</a>
+						<a id="n-coding" class="nexxt" onclick="plusSlides2(1)">&#10095;</a>
+						<span class="dot2" onclick="currentSlide2(1)"></span>
+						<span class="dot2" onclick="currentSlide2(2)"></span>
+						<span class="dot2" onclick="currentSlide2(3)"></span>
+					</div><!--slider ends-->
+					<br><br>
+					<div class="w-100 text-center">
+						<a id="coding-github-btn" href="https://github.com/s-louis66" target="_blank" class="btn" role="button">My Repositories <span class="fa fa-github"></span></a>
+					</div>
+				</div>
+			</a>
+		</div>
+		<!--skills section begins-->
+		<div class="row d-inline-flex text-center w-100 p-0">
+			<div class="animation-element bounce-up col-sm text-center">
+				<h1 id="skills-section" class="subject about-me text-center">Skills</h1>
+			</div>
+		</div>
+		<br>
+		<br>
+		<div id="flex-skills" class="row m-0">
+			<div id="top-row" class="row m-0">
+				<div class="skills-box col-sm-3 m-0 p-0 text-center">
+					<h2 class="non-br">HTML</h2>
+					<p class="skillboxp">The markup of a website & the way to format and display documents to the web.</p>
+					<h3><strong>Skilled at:</strong> HTML(HTML5)<br><br><br>
+						<strong><span class="og-height">Overall Grasp:</span></strong>
+					</h3>
+					<svg class="radial-progress mx-auto"  data-percentage="85" viewBox="0 0 100 100">
+						<circle class="incomplete" cx="50" cy="50" r="45"></circle>
+						<circle class="complete" cx="50" cy="50" r="45" style="stroke-dashoffset:
+						39.58406743523136;"></circle>
+						<text class="percentage" x="52.5%" y="35%" transform="matrix(0,1,-1,0,80,0)">85%</text>
+					</svg>
+					<h4 class="d-flex"><a class="skills-contact text-center" href="#block1">Contact Me</a></h4>
+				</div>
+				<div class="skills-box col-sm-3 m-0 p-0 text-center">
+					<h2 class="non-br even">Style & Design</h2>
+					<p class="skillboxp">Putting design and quality to your website or content. Fonts, colors, etc!</p>
+					<h3><strong>Skilled at:</strong> CSS, SCSS, Adobe: Photoshop, UX/UI Design<br><br>
+						<strong><span class="og-height og-color">Overall Grasp:</span></strong>
+					</h3>
+					<svg class="radial-progress mx-auto"  data-percentage="89" viewBox="0 0 100 100">
+						<circle class="incomplete" cx="50" cy="50" r="45"></circle>
+						<circle class="complete" cx="50" cy="50" r="45" style="stroke-dashoffset:
+						39.58406743523136;"></circle>
+						<text class="percentage" style="fill:white;" x="52.5%" y="35%" transform="matrix(0,1,-1,0,80,0)">89%</text>
+					</svg>
+					<h4><a class="skills-contact" href="#block1">Contact Me</a></h4>
+				</div>
+				<div class="skills-box col-sm-3 m-0 p-0 text-center">
+					<h2 class="non-br">Responsive</h2>
+					<p class="skillboxp">Flexibility for your website to be able to use in different device sizes.</p>
+					<h3><strong>Skilled at:</strong> CSS, Bootstrap, SCSS<br><br><br>
+						<strong><span class="og-height">Overall Grasp:</span></strong>
+					</h3>
+					<svg class="radial-progress mx-auto"  data-percentage="83" viewBox="0 0 100 100">
+						<circle class="incomplete" cx="50" cy="50" r="45"></circle>
+						<circle class="complete" cx="50" cy="50" r="45" style="stroke-dashoffset:
+						39.58406743523136;"></circle>
+						<text class="percentage" x="52.5%" y="35%" transform="matrix(0,1,-1,0,80,0)">83%</text>
+					</svg>
+					<h4><a class="skills-contact" href="#block1">Contact Me</a></h4>
+				</div>
+				<div class="skills-box col-sm-3 m-0 p-0 text-center">
+					<h2 class="non-br even">JavaScript</h2>
+					<p class="skillboxp">Include some interactivity to your website.</p>
+					<h3><strong>Skilled at:</strong> JavaScript, jQuery<br><br><br>
+						<strong><span class="og-height og-color">Overall Grasp:</span></strong>
+					</h3>
+					<svg class="radial-progress mx-auto"  data-percentage="79" viewBox="0 0 100 100">
+						<circle class="incomplete" cx="50" cy="50" r="45"></circle>
+						<circle class="complete" cx="50" cy="50" r="45" style="stroke-dashoffset:
+						39.58406743523136;"></circle>
+						<text class="percentage" style="fill:white;" x="52.5%" y="35%"  
+							transform="matrix(0,1,-1,0,80,0)">79%</text>
+					</svg>
+					<h4><a class="skills-contact" href="#block1">Contact Me</a></h4>
+				</div>
+				<div class="skills-box col-sm-3 m-0 p-0 text-center">
+					<h2 class="non-br">Other Programming</h2>
+					<p class="skillboxp">Back-end programming languages I've encountered.</p>
+					<div id="other-p-container">
+						<p class="op-headings"><strong>PHP</strong></p>
+						<div class="op-fullbackground">
+							<div class="op-numbackground" style="width:43%;">
+								<h6>43%</h6>
+							</div>
+						</div>
+						<p class="op-headings"><strong>Java</strong></p>
+						<div class="op-fullbackground">
+							<div class="op-numbackground" style="width:51%;">
+								<h6>51%</h6>
+							</div>
+						</div>
+					</div>
+					<h4><a class="skills-contact" href="#block1">Contact Me</a></h4>
+				</div>
+			</div>
+			<div id="bottom-row" class="row mx-0 mt-3 p-0">
+				<div class="skills-box col-sm-3 m-0 p-0 text-center">
+					<h2 class="even">Desktop Applications <br>& Other Tools</h2>
+					<p class="skillboxp">Computer & online tools for creating different kinds of content for web & non-web stuff.</p>
+					<h3 style="line-height:22px;font-size:1.05em;"><strong>Skilled at:</strong> CMS: Wordpress; Command Line: Git(Github), Bash Shell;
+						GUI's: Wordpress; Microsoft Office: Word, Powerpoint, Excel.
+					</h3>
+					<div></div>
+					<h4 class="bottom2"><a class="skills-contact" href="#block1">Contact Me</a></h4>
+				</div>
+				<div class="skills-box col-sm-3 m-0 p-0 text-center">
+					<h2>Woodworking</h2>
+					<p class="skillboxp">Woodworking projects for your home or other uses(not open for service at the moment.)</p>
+					<h3 style="line-height:22px;">Check out my work at the button down below and
+						<a href="#projects" class="atag-skills-cab">My Stores</a> under the projects section to buy some products.
+					</h3>
+					<div class="butt-container">
+						<a href="#projects-section"><button type="button" class="button-projects"></button></a>
+					</div>	
+				</div>
+				<div class="skills-box col-sm-3 m-0 p-0 text-center">
+					<h2 class="even">Soccer <br> Officiating</h2>
+					<p class="skillboxp">Executing the laws of the game while building some character.</p>
+					<h3 style="line-height:22px;font-size:1.05em;"><strong>Levels officiated:</strong> Anything from regular u10-u18, high school,
+					& weekend adult league games to academy, some semi-pro, & state cup games.</h3>
+					<div></div>
+					<h4 class="bottom2"><a id="tournament-link" class="skills-contact" href="#">Tournament Travels</a></h4>
+				</div>
+				<div class="skills-box col-sm-3 m-0 p-0 text-center">
+					<h2>Wood <br> Spraying</h2>
+					<p class="skillboxp">Creating a finishing touch to your furniture or woodworking projects(refinishing also.)</p>
+					<h3 style="line-height:22px;">Check out my work at the button down below and 
+						<a href="#projects-section" class="atag-skills-cab">My Stores</a> under the projects section to buy some products.
+					<div class="butt-container">
+						<a href="#projects-section"><button type="button" class="button-projects"></button></a>
+					</div>
+				</div>
+				<div class="skills-box col-sm-3 m-0 p-0 text-center">
+					<h2 class="non-br even">Others</h2>
+					<p class="skillboxp">Other skillsets Include:</p>
+					<ul class="others-ul">
+						<li>Bilingual(English & Spanish.)</li>
+						<li>Granite counter tops.</li>
+						<li>Able to read music.</li>
+						<li>Good gamer logic(Console)</li>
+						<li>Good with sports, generally.</li>
+					</ul>
+					<h4><a class="skills-contact" href="#block1">Contact Me</a></h4>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+		<br>
+		<br>
+		<br>
+		<br>
+	<!--footer begins-->
+	<footer>
+		<div>
+			<h1 id="footer-contact" class="mx-auto"><a href="#block1" class="second after">Begin Your Project</a></h1>
+		</div>
+		<br>
+		<div id="bottom-footer" class="flex-footer">
+			<div class="footer-left">
+				<!--<a href="#"><img src="images/colorado_view.jpg"></a>-->
+				<p><a href="#home-section" class="footer-copyright">&copy; 2020 Luis C. Solorio</a></p>
+			</div>
+			<div class="footer-center">
+				<ul class="footer-nav">
+					<li style="width:3em;"><a href="#home-section">Home</a></li>
+					<li><a href="#block1">Contact</a></li>
+					<li><a href="#about-section">About Me</a></li>
+					<li><a href="#projects-section">Projects</a></li>
+					<li style="width:2.8em;"><a href="#skills-section">Skills</a></li>
+					<li class="footer-smallnav" style="width:6.8em;"><a href="#">Privacy Policy</a></li>
+					<li class="footer-smallnav" style="width:6.5em;"><a href="#">Terms of Use</a></li>
+				</ul>
+			</div>
+			<div class="footer-right">
+				<ul class="footer-social">
+					<li>
+						<div class="tooltip-contain">
+								<img src="images/ig-icon2.png" alt ="Instagram logo" width="32.5" height="32.5"></img>
+							<span class="tooltipbody tb1">
+								<div class="tt-header tth1 d-flex">Instagram</div>
+								<h6>Username:<h6>
+								<p class="mt-2"><a href="https://www.instagram.com/s.louis66/" target="_blank">s.louis66</a></p>
+							</span>
+						</div>
+					</li>
+					<li>
+						<div class="tooltip-contain">
+							<img src="images/snap-icon2.png" alt ="Snapchat logo" width="32.5" height="32.5"></img>
+							<span class="tooltipbody tb2">
+								<div class="tt-header tth2 d-flex" style="color:#001e33;">Snapchat</div>
+								<h6>Username:<h6>
+								<p class="mt-2">solorioluis66</p>
+							</span>
+						</div>
+					</li>
+					<li>
+						<div class="tooltip-contain">
+								<img src="images/youtube-icon2.png" alt ="YouTube logo" width="32.5" height="32.5"></img>
+							<span class="tooltipbody tb3 text-center">
+								<div class="tt-header tth3 d-flex">YouTube</div>
+								<h6>Username:<h6>
+								<p class="mt-2"><a href="https://www.youtube.com/channel/UC-B_ZhBO8-FbWAOzw-ZE6QA" target="_blank">Luis Solorio</a></p>
+							</span>
+						</div>
+					</li>
+					<li>
+						<div class="tooltip-contain">
+								<img src="images/li-icon2.png" alt ="linkedIn logo" width="32.5" height="32.5"></img>
+							<span class="tooltipbody tb4">
+								<div class="tt-header tth4 d-flex">LinkedIn</div>
+								<h6>Username:<h6>
+								<p class="mt-2"><a href="https://www.linkedin.com/in/luis-solorio-71807a154/" target="_blank">Luis Solorio</a></p>
+							</span>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+</div>
+	
+</body>
+<!--get jquery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script><!-- Popper JS -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script><!-- Latest compiled bootstrap JavaScript -->
+<script src="https://kit.fontawesome.com/d1c246b541.js" crossorigin="anonymous"></script>
+<!--smooth scroll script-->
+<script src="profile-javascript/smoothscroll.js">
+</script>	
+<!--on-scroll headings script-->
+<script src="profile-javascript/profile-javascript.js">
+</script>
+<!--project slideshow scripts-->
+<script src="profile-javascript/project-slideshow.js">
+</script>
+<script src="profile-javascript/project-slideshow2.js">
+</script>
+<!--progress circle script-->	
+<script src="profile-javascript/progress.js">
+</script>
+<!--nav height short on scroll-->
+<script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("header").style.height = "80px";
+  } else {
+    document.getElementById("header").style.height = "110px";
+  }
+}
+</script>
+
+
+</html>
+
+
+
+

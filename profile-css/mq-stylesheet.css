@@ -1,0 +1,153 @@
+/*profile page media queries*/
+@media only screen and (max-width: 575px) {
+	#header .navbar-nav {
+		float: none;
+		text-align: center;
+		background-color: white;
+	}
+	#header {
+		height: auto !important;
+	}
+	#nav-buttons {
+		display: inline-block;
+	}
+	.navbar-toggler-icon {
+		font-size: 1.5em;
+	}
+	#navbarCollapse {
+		width: 100%;
+	}
+	.square {
+		font-size: 40px;
+	}
+	#banner {
+		display: none;
+	}
+	#banner-h2 {
+		float: none;
+		margin-top: 3em;
+		font-size: 22px;
+	}
+	#banner-container {
+		height: 37.5em;
+	}
+	#block1 {
+		height: auto;
+	}
+	#contact-right p {
+		padding-bottom:20px;
+	}
+	#animation-tab {
+		display: none;
+	}
+	.about-me {
+		font-size: 7em;
+		margin:40px auto 0;
+	}
+	.bounce-up .subject {
+		opacity: 1;
+		transform: none;
+		transition: none;
+	}
+	.about-descript {
+		display: none;
+	}
+	.about-me-flex {
+		height: auto;
+	}
+	.blur .image {
+		-moz-filter: blur(1px);
+		-webkit-filter: blur(1px);
+		filter: blur(1px);	
+	}
+	.am-link-container .overlay {
+		opacity:0.7;
+	}
+	.text {
+		opacity: 1;
+	}
+	.projects {
+		height: auto;
+		-moz-transition: none;
+		-webkit-transition: none;
+		-o-transition: none;
+		transition: none;
+	}
+	.projects a {
+		transition: none;
+	}
+	.projects-others, .projects-coding {
+		-moz-transition: none;
+		-webkit-transition: none;
+		-o-transition: none;
+		transition: none;
+		height: auto;
+		width: 100%;
+		max-width: 100%;
+		flex: 100%;
+	}
+	#others-etsy-btn {
+	}
+	#coding-github-btn {
+		background: white;
+		border: 1px solid #00004d;
+		color: #00004d;
+	}
+	.skills-box {
+		height: 27em;
+	}
+	#content {
+		height: 2085vh;
+	}
+	#footer-contact {
+		font-size: 3.25em;
+		text-align: center;
+	}
+	#footer-contact a {
+		transition: none;
+	}
+	#footer-contact a.before:before,
+	#footer-contact a.after:after {
+		content: none;
+	}	
+	.footer-left p {
+		font-size: 15px;
+		margin:0 auto;
+	}
+	footer, .flex-footer {
+		height: auto;	
+	}
+	.footer-left img {
+		height: auto;
+	}
+	#bottom-footer .footer-center,#bottom-footer .footer-right {
+		display: none;
+	}
+}
+@media only screen and (min-width: 575px) {
+	#banner-h2 {
+		font-size: 22px;
+	}
+	.about-descript {
+		display: none;
+	}
+	.text {
+		opacity: 1;
+	}
+	
+}
+@media only screen and (min-width: 900px) {
+	#banner-h2 {
+		font-size: 28px;
+	}
+	.about-descript {
+		display: inline;
+	}
+	.text {
+		opacity: 0;
+	}
+	.col-sm-3 {
+		flex:0 0 20%;
+		max-width: 20%;
+	}
+}
