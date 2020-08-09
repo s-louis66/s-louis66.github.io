@@ -8,8 +8,15 @@
 	#header {
 		height: auto !important;
 	}
+	#header .navbar-nav li {
+		margin:0 auto;
+	}
 	#nav-buttons {
 		display: inline-block;
+		margin: 0 auto;
+	}
+	.navbar-toggler {
+		margin: 0 auto;
 	}
 	.navbar-toggler-icon {
 		font-size: 1.5em;
@@ -18,7 +25,20 @@
 		width: 100%;
 	}
 	.square {
-		font-size: 40px;
+		display: none;
+		/*font-size: 40px;
+		margin:0 auto;*/
+	}
+	#name-responsive {
+		display: inline-block;
+		font-size: 1.2rem;
+		margin:0 auto;
+		font-weight: 500;
+		line-height: 0.725em;
+		letter-spacing:1px;
+		font-family: Perpetua,Baskerville,
+			Big Caslon,Palatino Linotype,Palatino,
+			URW Palladio L,Nimbus Roman No9 L,serif;
 	}
 	#banner {
 		display: none;
@@ -40,9 +60,12 @@
 	#animation-tab {
 		display: none;
 	}
+	#about-section {
+		margin:0 auto;
+	}
 	.about-me {
-		font-size: 7em;
-		margin:40px auto 0;
+		font-size: 6em;
+		margin:80px auto 0;
 	}
 	.bounce-up .subject {
 		opacity: 1;
@@ -65,6 +88,7 @@
 	}
 	.text {
 		opacity: 1;
+		font-size: 1.25em;
 	}
 	.projects {
 		height: auto;
@@ -94,16 +118,34 @@
 		background-color: transparent;
 		color: #00004d;
 	}
+	.previous, .nexxt {
+		padding: 0;
+	}
+	#moreProjects-btn {
+	}
 	#coding-github-btn {
 		background: white;
 		border: 1px solid #00004d;
 		color: #00004d;
 	}
 	.skills-box {
-		height: 27em;
+		height: 32.5em;
+	}
+	.skills-box .skillboxp {
+		padding: 15px 25px 0;
+		font-size: 1em;
+	}
+	.skills-box h2 {
+		font-size: 2em;
+		height: 18.5%;
+	}
+	.skills-box h3 {
+		font-size: 1.25rem !important;
+		padding: 10px 25px 0;
+		line-height:;
 	}
 	#content {
-		height: 1550vh;
+		height: 1960vh;
 	}
 	#footer-contact {
 		font-size: 3.25em;
@@ -115,7 +157,10 @@
 	#footer-contact a.before:before,
 	#footer-contact a.after:after {
 		content: none;
-	}	
+	}
+	.footer-left {
+		width: 100%;
+	}
 	.footer-left p {
 		font-size: 15px;
 		margin:0 auto;
@@ -130,6 +175,41 @@
 		display: none;
 	}
 }
+@media only screen and (min-width: 362px) {
+	#content {
+		height: 1990vh;
+	}
+	.square {
+		display: none;
+	}
+	.text {
+		font-size:1.35em;
+	}
+	#name-responsive {
+		display: inline-block;
+		font-size: 1.2rem;
+		margin:0 auto;
+		font-weight: 500;
+		line-height: 0.725em;
+		letter-spacing:1px;
+		font-family: Perpetua,Baskerville,
+			Big Caslon,Palatino Linotype,Palatino,
+			URW Palladio L,Nimbus Roman No9 L,serif;
+	}
+	.previous, .nexxt {
+		padding-right: 0;
+	}
+}
+@media only screen and (min-width: 500px) {
+	#content {
+		height: 2195vh;
+	}
+}
+@media only screen and (min-width: 530px) {
+	.text {
+		font-size:1.45em;
+	}
+}
 @media only screen and (min-width: 575px) {
 	#banner-h2 {
 		font-size: 22px;
@@ -140,9 +220,14 @@
 	.text {
 		opacity: 1;
 	}
-	
+	#content {
+		height: 2285vh;
+	}
 }
 @media only screen and (min-width: 900px) {
+	#content {
+		height: 660vh;
+	}
 	#banner-h2 {
 		font-size: 28px;
 	}
@@ -155,5 +240,17 @@
 	.col-sm-3 {
 		flex:0 0 20%;
 		max-width: 20%;
+	}
+	.square {
+		display: inline-block;
+	}
+	#name-responsive {
+		display: none;
+	}
+	.text {
+		font-size: 1.15em;
+	}
+	.previous, .nexxt {
+		padding: 16px;
 	}
 }

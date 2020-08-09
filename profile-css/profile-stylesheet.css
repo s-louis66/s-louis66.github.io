@@ -63,9 +63,7 @@ a {
 		font-family: Franklin Gothic Medium,
 			Franklin Gothic,ITC Franklin Gothic,
 			Arial,sans-serif;
-		
 	}
-	
 		.square a,.square a:visited,.square a:hover,.square a:active {
 		-webkit-backface-visibility: hidden;
 		-moz-backface-visibility: hidden;
@@ -96,7 +94,6 @@ a {
 	#header a.before:before {
 		top: -0.25em;
 	}
-	
 	#header a.after:after {
 		bottom: -0.25em;
 	}
@@ -138,7 +135,9 @@ a {
 		position: relative;
 			
 	}
-		
+	#name-responsive {
+		display: none;
+	}	
 	.square a {
 		position: static;
 		font-size: 100%;
@@ -196,8 +195,7 @@ a {
 		
 	#header .navbar-nav {
 		float: right;
-	}
-		
+	}	
 		#header .navbar-nav li {
 			float: left;
 			font-size:;
@@ -523,7 +521,6 @@ a {
 				max-width: 100%;
 			}
 		}
-		
 	.hr-bio {
 		border:0;
 		height: 1.5px;
@@ -538,10 +535,7 @@ a {
 		#f0f0f0);
 		background-image: linear-gradient(left, #f0f0f0, #8c8b8b,
 		#f0f0f0);
-	}	
-		
-	
-		
+	}		
 	/*project section starts*/
 	.projects {
 			overflow: hidden;
@@ -551,175 +545,168 @@ a {
 	}
 		.projects a {
 				cursor: default;
+		}
+			.box {
+			box-sizing: border-box;
+			box-shadow: 1.1px 1.2px #595959;
 			}
-	
-				.box {
+				.projects h1 {
+					font-size: 4.40em;
+					text-align: center;
+					text-shadow: 0 3px 3px rgba(0,0,0,0.9);
+					font-family: 'Dancing Script', cursive;
+					line-height: 80px;
+					padding-top: 2px;
+				}
+			
+			.projects-others, .projects-coding {
+				width: 50%;
+				-moz-transition: width .3s;
+				-webkit-transition: width .3s;
+				-o-transition: width .3s;
+				transition: width .3s;
+				height: 27em;
+				padding: 1em;
 				box-sizing: border-box;
-				box-shadow: 1.1px 1.2px #595959;
+			}
+			
+			.projects-others { 
+				float: right;
+				background: #00004d;
+				background-size: cover;
+				background-attachment: fixed;
+				background-position: center;
+				background-repeat: no-repeat;
+			}
+			.projects-coding {
+				background: white;
+				border-right:;
+			}	
+			.projects:hover .projects-others  {
+				width: 40%;
+			}	
+			.projects-coding:hover {
+				width: 60% ;
+			}
+				
+			.projects-others:hover {
+				width: 60% !important;
+			}
+				
+			.projects-others:hover ~ .projects-coding {
+				width: 40% !important;
+			}
+			/*courosel section starts*/
+			.slideshow-container {
+				max-width: 1000px;
+				height: 7.5em;
+				position: relative;
+				margin: 7.5px auto;
+			} 
+				.mySlides, .mySlides2 {
+					display: none;
 				}
-					.projects h1 {
-						font-size: 4.40em;
-						text-align: center;
-						text-shadow: 0 3px 3px rgba(0,0,0,0.9);
-						font-family: 'Dancing Script', cursive;
-						line-height: 80px;
-						padding-top: 2px;
+				
+					.project-text {
+					display: flex;
+					width: 100%;
+					justify-content: center;
+					align-items: center;
+					font-family: 'Inknut Antiqua', serif;
 					}
-			
-				.projects-others, .projects-coding {
-					width: 50%;
-					-moz-transition: width .3s;
-					-webkit-transition: width .3s;
-					-o-transition: width .3s;
-					transition: width .3s;
-					height: 27em;
-					padding: 1em;
-					box-sizing: border-box;
-				}
-			
-				.projects-others { 
-					float: right;
-					background: #00004d;
-					background-size: cover;
-					background-attachment: fixed;
-					background-position: center;
-					background-repeat: no-repeat;
-				}
-			
-				.projects-coding {
-					background: white;
-					border-right:;
-				}
-				
-				.projects:hover .projects-others  {
-					width: 40%;
-				}
-				
-				.projects-coding:hover {
-					width: 60% ;
-				}
-				
-				.projects-others:hover {
-					width: 60% !important;
-				}
-				
-				.projects-others:hover ~ .projects-coding {
-					width: 40% !important;
-				}
-				/*courosel section starts*/
-				.slideshow-container {
-					max-width: 1000px;
-					height: 7.5em;
-					position: relative;
-					margin: 7.5px auto;
-				} 
-					.mySlides, .mySlides2 {
-						display: none;
+					.slideshow-img {
+						width: 17.4rem;
+						height: 10.5rem;
+						border-radius: 5px;
+						box-shadow:2.5px 2.5px 2px rgba(0,0,0,0.7);
+						-webkit-transition:display 1s;
+						transition:all 1s;
 					}
-				
-						.project-text {
-						display: flex;
-						width: 100%;
-						justify-content: center;
-						align-items: center;
-						font-family: 'Inknut Antiqua', serif;
-						}
-						.slideshow-img {
-							width: 17.4rem;
-							height: 10.5rem;
-							border-radius: 5px;
-							box-shadow:2.5px 2.5px 2px rgba(0,0,0,0.7);
-							-webkit-transition:display 1s;
-							transition:all 1s;
-						}
-						.slide-hover-p {
-							display:none;
+					.slide-hover-p {
+						display:none;
 							
-						}
-						.slideshow-img:hover + .slide-hover-p {
-							display: block;
-						}
-						.fade-car {
-							-moz-animation-name:fade-car;
-							-webkit-animation-name: fade-car;
-							-moz-animation-duration: 2.5s;
-							-webkit-animation-duration: 2.5s;
+					}
+					.slideshow-img:hover + .slide-hover-p {
+						display: block;
+					}
+					.fade-car {
+						-moz-animation-name:fade-car;
+						-webkit-animation-name: fade-car;
+						-moz-animation-duration: 2.5s;
+						-webkit-animation-duration: 2.5s;
 							
-						}
-					.previous, .nexxt {
-						cursor: pointer;
-						position: absolute;
-						top: 50%;
-						width: auto;
-						padding: 16px;
-						margin-top:;
-						font-weight: bold;
-						font-size: 28px;
-						transition:0.85s ease;
-						border-radius: 0 3px 3px 0;
-						user-select: none;
 					}
+				.previous, .nexxt {
+					cursor: pointer;
+					position: absolute;
+					top: 50%;
+					width: auto;
+					padding: 16px;
+					margin-top:;
+					font-weight: bold;
+					font-size: 28px;
+					transition:0.85s ease;
+					border-radius: 0 3px 3px 0;
+					user-select: none;
+				}
 					
-					.nexxt {
-						right:0;
-						border-radius: 3px 0 0 3px;
-					}
+				.nexxt {
+					right:0;
+					border-radius: 3px 0 0 3px;
+				}
 					
-					.previous:hover, .nexxt:hover {
-						cursor: pointer;
-					}
+				.previous:hover, .nexxt:hover {
+					cursor: pointer;
+				}
 					
-					#p-others:hover, #n-others:hover {
-						background-color: white;
-						color: #00004d;
-					}
-					#p-coding:hover, #n-coding:hover {
-						background-color: #00004d;
-						color: white;
-					}
-					
-						
-						/*courosel media queries*/
-						@-webkit-keyframes fade-car {
-							from {opacity: 0.4}
-							to {opacity: 1}
-						}
-						
-						@keyframes fade-car {
-							from {opacity: 0.4}
-							to {opacity: 1}
-						}
-						
-						@media only screen and (max-width: 300px) {
-							.previous, .nexxt {font-size: 11px}
-						}
-						
-				#coding-github-btn {
-					font-size: 1.35em;
-					font-weight: 400;
-					background: #00004d;
-					border: 1px solid #00004d;
-					transition: all 0.9s;
+				#p-others:hover, #n-others:hover {
+					background-color: white;
+					color: #00004d;
+				}
+				#p-coding:hover, #n-coding:hover {
+					background-color: #00004d;
 					color: white;
-					cursor: pointer;
-				}	
-				#coding-github-btn:hover, #coding-github-btn:focus {
-					background: white;
-					border: 1px solid #00004d;
-					color: #00004d;
-				}	
-				#others-etsy-btn {
-					font-size: 1.175em;
-					font-weight: 500;
-					background: #ffdb4d;
-					border: 1px solid #ffdb4d;
-					transition: all 0.6s;
-					color: #00004d;
-					cursor: pointer;
 				}
-				#others-etsy-btn:hover, #others-etsy-btn:focus {
-					opacity: 0.7;
-				}
+					/*courosel media queries*/
+					@-webkit-keyframes fade-car {
+						from {opacity: 0.4}
+						to {opacity: 1}
+					}
+					@keyframes fade-car {
+						from {opacity: 0.4}
+						to {opacity: 1}
+					}
+					@media only screen and (max-width: 300px) {
+						.previous, .nexxt {font-size: 11px}
+					}
+						
+			#coding-github-btn {
+				font-size: 1.35em;
+				font-weight: 400;
+				background: #00004d;
+				border: 1px solid #00004d;
+				transition: all 0.9s;
+				color: white;
+				cursor: pointer;
+			}	
+			#coding-github-btn:hover, #coding-github-btn:focus {
+				background: white;
+				border: 1px solid #00004d;
+				color: #00004d;
+			}	
+			#moreProjects-btn {
+				font-size: 1.175em;
+				font-weight: 500;
+				width: 30%;
+				background: #ffdb4d;
+				border: 1px solid #ffdb4d;
+				transition: all 0.6s;
+				color: #00004d;
+				cursor: pointer;
+			}
+			#moreProjects-btn:hover, #moreProjects-btn:focus {
+				opacity: 0.7;
+			}
 			
 	/*skills section starts*/
 	#flex-skills {
@@ -731,7 +718,6 @@ a {
 		width: 100%;
 		height: 51em;
 	}
-	
 		.skills-box {
 			position: relative;
 			border-radius: 5px;
@@ -739,7 +725,6 @@ a {
 			width: 100%;
 			font-family: 'Josefin Sans', sans-serif;
 		}
-		
 			.skills-box h2 {
 				text-align: center;
 				height: 16%;
@@ -749,8 +734,6 @@ a {
 				border-radius: 4px;
 				/*border: .5px solid black;*/
 			}
-			
-			
 			.skills-box .skillboxp {
 				text-align: center;
 				height: 70px;
@@ -761,7 +744,6 @@ a {
 				padding: 15px 10px 0;
 				/*border: .5px solid black;*/
 			}
-			
 			.skills-box h3 {
 				text-align: center;
 				font-size: 14.5px;
@@ -770,30 +752,24 @@ a {
 				line-height: 18px;
 				padding: 10px 5px 0;
 				/*border: .5px solid black;*/
-
 			}
-			
 			.og-height {
 				font-size: 20px;
 				color: #002d4d;
 			}
-			
 			.og-color {
 				color: white;
 			}
-			
 			.non-br {
 				display: flex;
 				font-size: 22px;
 				justify-content: center;
 				align-items: center;
 			}
-			
 			.even {
 				background: #002d4d;
 				color: white;
 			}
-			
 			/*svg progress circle starts*/
 			/* RADIAL PROGRESS */
 			/* Circumference = 2πr */
@@ -809,7 +785,6 @@ a {
 				margin-left: 22%;
 				/*border: .5px solid black;*/
 			}
-			
 			svg.radial-progress circle {
 				fill: rgba(0,0,0,0);
 				stroke: #fff;
@@ -817,33 +792,26 @@ a {
 				stroke-width: 10;
 				
 			}
-			
 			svg.radial-progress circle.incomplete {
 				opacity: 0.25;
 			}
-			
 			svg.radial-progress circle.complete {
 				stroke-dasharray: 282.74333882308139146163790;/* Circumference */
 			}
-			
 			svg.radial-progress text {
 				fill: #002d4d;
 				text-anchor: middle;
 			}
-			
 				.radial-progress text {
 					font-size: 20px;
 				}
-				
 				.perc-color {
 					color: white;
 				}
-			
 			svg.radial-progress:nth-of-type(6n+1) circle {
 				stroke: #002d4d;
 			}
 			/*circle progress ends*/
-			
 			.skills-box h4 {
 				text-align:;
 				position: absolute;
@@ -880,7 +848,6 @@ a {
 					height: 1.5em;
 					/*border: .5px solid black;*/
 				}
-				
 				.op-fullbackground {
 					width: 90%;
 					height: 1em;
@@ -890,7 +857,6 @@ a {
 					padding-top: 2px;
 					/*border:.5px solid black;*/
 				}
-				
 					.op-numbackground {
 						height: 100%;
 						background-color: #002d4d;
@@ -899,7 +865,6 @@ a {
 						justify-content: center;
 						align-items: center;
 					}
-					
 						.op-numbackground h6 {
 							color: white;
 						}
@@ -908,38 +873,60 @@ a {
 				text-decoration:underline;
 				color: #003380;
 			}
-			
 			.atag-skills-cab:visited {
 				color: #003380;
 			}
-			
 			.butt-container {
 				height: 9em;
 				display: flex;
 				justify-content: center;
 				align-items: center;
 			}
-				
-				.butt-container a,a:visited,a:active,a:link {
-					border: none;
+				.butt-container a,.butt-container a:visited,.butt-container a:active,.butt-container a:link {
+					border:none;
+					width: 140px;
+                    height: 75px;
 				}
-				
 				.button-projects {
 					transition: box-shadow .35s;
-					width: 140px;
-					height: 75px;
-					padding-top: ;
+					width: 100%;
+                    height: 100%;
+					position: relative;
 					background-color: #002d4d;
 					border-radius: 5px;
 					border: none;
 				}
-				
 				.button-projects:hover {
 					box-shadow: 0px 0px 1px 1.25px rgba(0,0,128,0.45);
 					cursor: pointer;
 					border: none;
 				}
-				
+				    .button-transition {
+				        opacity: 1;
+				        display: block;
+				        width: 100%;
+				        height: auto;
+				        transition: 0.5s ease;
+				        backface-visibility: hidden;
+				    }
+                    .button-image {
+                        transition: 0.5s ease;
+                        opacity:0;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        -ms-transform: translate(-50%, -50%);
+                        width: 75%;
+                        height: 100%;
+                    }
+                    .button-projects:hover .button-transition {
+                        opacity: 0.96;
+                    }
+                    .button-projects:hover .button-image {
+                        opacity: 1;
+                    }
+
 			.others-ul {
 				/*border:.5px solid black;*/
 				text-align: center;
@@ -977,7 +964,10 @@ footer {
 			text-decoration: none;
 			transition: 0.5s all ease;
 		}
-			#footer-contact a,#footer-contact a:visited,#footer-contact a:hover,#footer-contact a:active {
+			#footer-contact a,
+			#footer-contact a:visited,
+			#footer-contact a:hover,
+			#footer-contact a:active {
 				-webkit-backface-visibility: hidden;
 				-moz-backface-visibility: hidden;
 				backface-visibility: hidden;
@@ -988,7 +978,6 @@ footer {
 			#footer-contact a:hover {
 				color: white;
 			}
-			
 			#footer-contact a.before:before,
 			#footer-contact a.after:after	{
 				content: "";
@@ -997,15 +986,12 @@ footer {
 				backface-visibility: hidden;
 				position: absolute;
 			}
-	
 			#footer-contact a.before:before {
 				top: -0.25em;
 			}
-	
 			#footer-contact a.after:after {
 				bottom: -0.475em;
 			}
-
 			#footer-contact a.after:after {
 				height: 5px;
 				height: 0.35rem;
@@ -1123,7 +1109,6 @@ footer {
 						position: relative;
 						display:;
 					}
-					
 						.tooltip-contain .tooltipbody {
 							visibility: hidden;
 							width: 120px;
@@ -1140,7 +1125,6 @@ footer {
 							transition: opacity 1.25s;
 							border: 2px solid #fb3958;
 						}
-
 							.tooltip-contain .tb1 {
 								left: 50%;
 								border: 2px solid #cc33ff;
@@ -1192,6 +1176,9 @@ footer {
 							.tooltipbody a,.tooltipbody a:visited {
 								color: #1a75ff;
 							}
+							#mt-2 {
+							    font-size: 20px;
+							}
 							.tt-header {
 								width: 100%;
 								height: 22.5px;
@@ -1223,13 +1210,11 @@ footer {
         from { opacity: 0; }
         to   { opacity: 1; }
     }
-
     /* Safari, Chrome and Opera > 12.1 */
     @-webkit-keyframes fadein {
         from { opacity: 0; }
         to   { opacity: 1; }
     }
-
     /* Internet Explorer */
     @-ms-keyframes fadein {
         from { opacity: 0; }
