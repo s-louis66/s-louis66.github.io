@@ -177,7 +177,7 @@
 }
 @media only screen and (min-width: 362px) {
 	#content {
-		height: 1890vh;
+		height: 1600vh;
 	}
 	.square {
 		display: none;
@@ -202,7 +202,7 @@
 }
 @media only screen and (min-width: 500px) {
 	#content {
-		height: 2195vh;
+		height: 1925vh;
 	}
 }
 @media only screen and (min-width: 530px) {
