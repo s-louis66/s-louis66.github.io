@@ -68,20 +68,15 @@ a {
 		-webkit-backface-visibility: hidden;
 		-moz-backface-visibility: hidden;
 		backface-visibility: hidden;
-		position:;
 		transition:0.5s color ease;
 		text-decoration: none;
-	
 	}
-	
 	.navbar-nav a:hover {
 		color: #ffdb4d;
 	}
-	
 	.square a:hover {
 		color: #0000b3;
 	}
-	
 	#header a.before:before,
 	#header a.after:after	{
 		content: "";
@@ -90,15 +85,12 @@ a {
 		backface-visibility: hidden;
 		position: absolute;
 	}
-	
 	#header a.before:before {
 		top: -0.25em;
 	}
 	#header a.after:after {
 		bottom: -0.25em;
 	}
-	
-	
 	.square a.before:before,
 	.square a.after:after {
 		height: 5px;
@@ -106,34 +98,28 @@ a {
 		width: 0;
 		background: #0000b3;
 	}
-	
 	.navbar-nav a.after:after {
 		height: 5px;
 		height: 0.35rem;
 		width: 0;
 		background: black;
 	}
-	
 	.navbar-nav a.second:after {
 		right: 0;
 	}
-	
 	#header a.before:hover:before,
 	#header a.after:hover:after {
 		width: 100%;
 	}
 	.square {
 		float: left;
-		font-size: 3.5em;
+		font-size: 2.8em;
 		font-weight: 500;
-		line-height: 0.725em;
+		line-height: 1.1em;
 		letter-spacing:1px;
-		font-family: Perpetua,Baskerville,
-			Big Caslon,Palatino Linotype,Palatino,
-			URW Palladio L,Nimbus Roman No9 L,serif;
+	    font-family: 'Inknut Antiqua', serif;
 		box-sizing: border-box;
 		position: relative;
-			
 	}
 	#name-responsive {
 		display: none;
@@ -144,12 +130,10 @@ a {
 		overflow: hidden;
 		padding: 0 5px 0 23px;
 	}
-		
 	.square a:visited,
 	.square a:active {
 		color: #0000b3;
 	}
-		
 	.square:before,.square:after{
 		content: "";
 		box-sizing:border-box;
@@ -162,37 +146,30 @@ a {
 		height: 0;
 		background: #0000b3;
 	}
-		
 	.square:before {
 		left: 0;
 		bottom: -0.2em;
 	}
-		
 	.square:after {
 		right: 0;
 		top: -0.2em;
 	}
-		
 	.square a:before {
 		left: 0;
 		transition: 0.25s all ease;
 	}
-		
 	.square a:after {
 		right: 0;
 		transition: 0.25s all ease;
 	}
-		
 	.square:hover:before,
 	.square:hover:after {
 		height: calc(100% + 0.4em);
 	}
-		
 	.square:hover a:before,
 	.square:hover a:after {
 		width: 100%;
 	}
-		
 	#header .navbar-nav {
 		float: right;
 	}	
@@ -260,8 +237,8 @@ a {
 		color: #fff;
 		margin-top: 1em;
 		letter-spacing: 1px;
-		font-family: 'Dancing Script', cursive;
-		font-size: 2.9em;
+		font-family: 'Inknut Antiqua', serif;
+		font-size: 2.25em;
 		font-weight: 500;
 	}
 	#contact-right.in-view #fadein-contact1 {
@@ -346,12 +323,7 @@ a {
 			text-align: center;
 			color: white;
 		}
-	
-	
 	.animation-element {
-		width:;
-		height:;
-		color:;
 		padding-top: 1px;
 	}
 	.about-me {
@@ -464,17 +436,14 @@ a {
 					opacity: 1;
 					cursor: pointer;
 				}
-			
 				.blur:hover .middle {
 					opacity: 1;
 					cursor: pointer;
 				}
-				
 				.blur:hover .text {
 					opacity: 1;
 					cursor: pointer;
 				}
-				
 				.middle {
 					-moz-transition: all .3s ease;
 					-webkit-transition: all.3s ease;
@@ -505,8 +474,6 @@ a {
 						text-decoration: none;
 						color: #ffdb4d;
 					}
-		
-		
 		/*Flex box media queries*/
 		@media (max-width: 800px){
 			.column {
@@ -514,7 +481,6 @@ a {
 				max-width: 50%;
 			}
 		}
-		
 		@media (max-width:600px){
 			.column {
 				flex: 100%;
@@ -535,30 +501,166 @@ a {
 		#f0f0f0);
 		background-image: linear-gradient(left, #f0f0f0, #8c8b8b,
 		#f0f0f0);
-	}		
-	/*project section starts*/
+	}
+	/*modals for project section starts*/
+    .modal-header .close {
+        margin:-1rem -1rem -1rem 0;
+    }
+    .modal-gallery img {
+        height: 125px;
+    }
+    /*
+        code by Iatek LLC 2018 - CC 2.0 License - Attribution required
+        code customized by Azmind.com
+    */
+    @media (min-width: 768px) and (max-width: 991px) {
+        /* Show 4th slide on md if col-md-4*/
+        .carousel-inner .active.col-md-4.carousel-item + .carousel-item + .carousel-item + .carousel-item {
+            position: absolute;
+            top: 0;
+            right: -33.3333%;  /*change this with javascript in the future*/
+            z-index: -1;
+            display: block;
+            visibility: visible;
+        }
+    }
+    @media (min-width: 576px) and (max-width: 768px) {
+        /* Show 3rd slide on sm if col-sm-6*/
+        .carousel-inner .active.col-sm-6.carousel-item + .carousel-item + .carousel-item {
+            position: absolute;
+            top: 0;
+            right: -50%;  /*change this with javascript in the future*/
+            z-index: -1;
+            display: block;
+            visibility: visible;
+        }
+    }
+    @media (min-width: 576px) {
+        .carousel-item {
+            margin-right: 0;
+        }
+        /* show 2 items */
+        .carousel-inner .active + .carousel-item {
+            display: block;
+        }
+        .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+        .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item {
+            transition: none;
+        }
+        .carousel-inner .carousel-item-next {
+            position: relative;
+            transform: translate3d(0, 0, 0);
+        }
+        /* left or forward direction */
+        .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+        .carousel-item-next.carousel-item-left + .carousel-item,
+        .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item {
+            position: relative;
+            transform: translate3d(-100%, 0, 0);
+            visibility: visible;
+        }
+        /* farthest right hidden item must be also positioned for animations */
+        .carousel-inner .carousel-item-prev.carousel-item-right {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            display: block;
+            visibility: visible;
+        }
+        /* right or prev direction */
+        .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+        .carousel-item-prev.carousel-item-right + .carousel-item,
+        .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item {
+            position: relative;
+            transform: translate3d(100%, 0, 0);
+            visibility: visible;
+            display: block;
+            visibility: visible;
+        }
+    }
+    /* MD */
+    @media (min-width: 768px) {
+        /* show 3rd of 3 item slide */
+        .carousel-inner .active + .carousel-item + .carousel-item {
+            display: block;
+        }
+        .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
+            transition: none;
+        }
+        .carousel-inner .carousel-item-next {
+            position: relative;
+            transform: translate3d(0, 0, 0);
+        }
+        /* left or forward direction */
+        .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
+            position: relative;
+            transform: translate3d(-100%, 0, 0);
+            visibility: visible;
+        }
+        /* right or prev direction */
+        .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
+            position: relative;
+            transform: translate3d(100%, 0, 0);
+            visibility: visible;
+            display: block;
+            visibility: visible;
+        }
+    }
+    /* LG */
+    @media (min-width: 991px) {
+        /* show 4th item */
+        .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item {
+            display: block;
+        }
+        .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
+            transition: none;
+        }
+        /* Show 5th slide on lg if col-lg-3 */
+        .carousel-inner .active.col-lg-3.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item  {
+            position: absolute;
+            top: 0;
+            right: -25%;  /*change this with javascript in the future*/
+            z-index: -1;
+            display: block;
+            visibility: visible;
+        }
+        /* left or forward direction */
+        .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+            position: relative;
+            transform: translate3d(-100%, 0, 0);
+            visibility: visible;
+        }
+        /* right or prev direction //t - previous slide direction last item animation fix */
+        .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+            position: relative;
+            transform: translate3d(100%, 0, 0);
+            visibility: visible;
+            display: block;
+            visibility: visible;
+        }
+    }
+	/*project section main part starts*/
 	.projects {
-			overflow: hidden;
-			height: 27em;
-			margin-top: 50px;
-			border: ;
+        overflow: hidden;
+        height: 27em;
+        margin-top: 50px;
 	}
 		.projects a {
-				cursor: default;
+            cursor: default;
 		}
 			.box {
-			box-sizing: border-box;
-			box-shadow: 1.1px 1.2px #595959;
+			    box-sizing: border-box;
+			    box-shadow: 1.1px 1.2px #595959;
 			}
 				.projects h1 {
-					font-size: 4.40em;
+					font-size: 3em;
 					text-align: center;
 					text-shadow: 0 3px 3px rgba(0,0,0,0.9);
-					font-family: 'Dancing Script', cursive;
-					line-height: 80px;
+					font-family: 'Inknut Antiqua', serif;
+					line-height: 70px;
 					padding-top: 2px;
 				}
-			
 			.projects-others, .projects-coding {
 				width: 50%;
 				-moz-transition: width .3s;
@@ -596,7 +698,7 @@ a {
 			.projects-others:hover ~ .projects-coding {
 				width: 40% !important;
 			}
-			/*courosel section starts*/
+			/*carousel section starts*/
 			.slideshow-container {
 				max-width: 1000px;
 				height: 7.5em;
@@ -606,28 +708,20 @@ a {
 				.mySlides, .mySlides2 {
 					display: none;
 				}
-				
 					.project-text {
-					display: flex;
-					width: 100%;
-					justify-content: center;
-					align-items: center;
-					font-family: 'Inknut Antiqua', serif;
+					    display: flex;
+					    width: 100%;
+					    justify-content: center;
+					    align-items: center;
 					}
+					    .project-text a:hover {
+					        cursor: pointer;
+					    }
 					.slideshow-img {
 						width: 17.4rem;
 						height: 10.5rem;
 						border-radius: 5px;
 						box-shadow:2.5px 2.5px 2px rgba(0,0,0,0.7);
-						-webkit-transition:display 1s;
-						transition:all 1s;
-					}
-					.slide-hover-p {
-						display:none;
-							
-					}
-					.slideshow-img:hover + .slide-hover-p {
-						display: block;
 					}
 					.fade-car {
 						-moz-animation-name:fade-car;
@@ -649,16 +743,13 @@ a {
 					border-radius: 0 3px 3px 0;
 					user-select: none;
 				}
-					
 				.nexxt {
 					right:0;
 					border-radius: 3px 0 0 3px;
 				}
-					
 				.previous:hover, .nexxt:hover {
 					cursor: pointer;
 				}
-					
 				#p-others:hover, #n-others:hover {
 					background-color: white;
 					color: #00004d;
@@ -667,7 +758,7 @@ a {
 					background-color: #00004d;
 					color: white;
 				}
-					/*courosel media queries*/
+					/*carousel media queries*/
 					@-webkit-keyframes fade-car {
 						from {opacity: 0.4}
 						to {opacity: 1}
@@ -679,7 +770,6 @@ a {
 					@media only screen and (max-width: 300px) {
 						.previous, .nexxt {font-size: 11px}
 					}
-						
 			#coding-github-btn {
 				font-size: 1.35em;
 				font-weight: 400;
@@ -707,7 +797,14 @@ a {
 			#moreProjects-btn:hover, #moreProjects-btn:focus {
 				opacity: 0.7;
 			}
-			
+			/*carousel modals section starts*/
+            .tab-pane img {
+                width: 30rem;
+                height: 275px;
+            }
+            .modal-gallery img {
+                height: 100px;
+            }
 	/*skills section starts*/
 	#flex-skills {
 		display: flex;
@@ -868,7 +965,6 @@ a {
 						.op-numbackground h6 {
 							color: white;
 						}
-			
 			.atag-skills-cab {
 				text-decoration:underline;
 				color: #003380;
@@ -926,7 +1022,6 @@ a {
                     .button-projects:hover .button-image {
                         opacity: 1;
                     }
-
 			.others-ul {
 				/*border:.5px solid black;*/
 				text-align: center;
@@ -1008,64 +1103,52 @@ footer {
 			#footer-contact a.after:hover:after {
 				width: 100%;
 			}
-	
 		footer a,footer a:visited {
 			color: white;
 				
 		}
-		
 	.flex-footer {
 		width: 100%;
 		height: 4.1em;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
-	}	
-	
+	}
 		.flex-footer > div {
 			margin: 10px;
 			padding: 0px;
 			font-size: 28px;
 			display: flex;
 		}
-	
 			.footer-left {
 				width: 280px;
 				height: auto;
 				position: relative;
 			}
-		
 				.footer-left img {
 					width: 100px;
 					height: 100%;
 					
 				}
-				
 				.footer-left p {
 					font-size: 14px;
 					display: flex;
 					align-items: flex-end;
 					padding:0 10px 0;
 				}
-				
 					.footer-copyright, .footer-copyright:visited {
 						color: white;
 					}
-					
 					.footer-copyright {
 						bottom:0;
 					}
-					
 					.footer-copyright:hover {
 						opacity: 0.75;
 					}
-			
 			.flex-footer div ul {
 					display: flex;
 					list-style-type: none;
 				}
-		
-			
 			.footer-center {
 				font-family: 'Josefin Sans', sans-serif;
 			}
@@ -1142,7 +1225,6 @@ footer {
 								right: 0;
 								border: 2px solid #0066ff;
 							}
-						
 						.tooltip-contain .tooltipbody::after {
 							content: "";
 							position: absolute;
@@ -1151,7 +1233,6 @@ footer {
 							border-width: 7px;
 							border-style: solid;
 						}
-
 							.tooltip-contain .tb1::after {
 								left: 11.5%;
 								border-color: #cc33ff transparent transparent;
@@ -1168,7 +1249,6 @@ footer {
 								left: 85.5%;
 								border-color: #0066ff transparent transparent;
 							}
-						
 						.tooltip-contain:hover .tooltipbody {
 							visibility: visible;
 							opacity: 1;
@@ -1176,7 +1256,7 @@ footer {
 							.tooltipbody a,.tooltipbody a:visited {
 								color: #1a75ff;
 							}
-							#mt-2 {
+							.mt-2 {
 							    font-size: 20px;
 							}
 							.tt-header {
