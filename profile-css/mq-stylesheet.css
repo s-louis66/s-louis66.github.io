@@ -155,7 +155,7 @@
 		line-height:;
 	}
 	#content {
-		height: 1860vh;
+		height: 1060vh;
 	}
 	#footer-contact {
 		font-size: 3.25em;
@@ -306,7 +306,7 @@
 /*don't forget to add responsive code for devices 575px and above and under 900px*/
 @media only screen and (min-width: 900px) {
 	#content {
-		height: 650vh;
+		height: 605vh;
 	}
 	#banner-h2 {
 		font-size: 28px;
