@@ -155,7 +155,7 @@
 		line-height:;
 	}
 	#content {
-		height: 1960vh;
+		height: 1860vh;
 	}
 	#footer-contact {
 		font-size: 3.25em;
@@ -187,7 +187,7 @@
 }
 @media only screen and (min-width: 362px) {
 	#content {
-		height: 17000vh;
+		height: 15000vh;
 	}
 	.square {
 		display: none;
@@ -240,7 +240,7 @@
 }
 @media only screen and (min-width: 500px) {
 	#content {
-		height: 2195vh;
+		height: 1950vh;
 	}
 	.tab-pane img {
             width: 16rem;
@@ -306,7 +306,7 @@
 /*don't forget to add responsive code for devices 575px and above and under 900px*/
 @media only screen and (min-width: 900px) {
 	#content {
-		height: 660vh;
+		height: 650vh;
 	}
 	#banner-h2 {
 		font-size: 28px;
