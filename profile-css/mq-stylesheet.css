@@ -187,7 +187,7 @@
 }
 @media only screen and (min-width: 362px) {
 	#content {
-		height: 10000vh;
+		height: 6000vh;
 	}
 	.square {
 		display: none;
