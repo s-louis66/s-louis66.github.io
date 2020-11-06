@@ -57,14 +57,20 @@
 	#contact-right p {
 		padding-bottom:20px;
 	}
+	#contact-right h2 {
+        font-size: 1.5em;
+    }
 	#animation-tab {
 		display: none;
 	}
 	#about-section {
 		margin:0 auto;
 	}
+	#about-section h1 {
+	    font-size: 6em;
+	}
 	.about-me {
-		font-size: 6em;
+		font-size: 8.5em;
 		margin:80px auto 0;
 	}
 	.bounce-up .subject {
@@ -149,13 +155,24 @@
 		font-size: 2em;
 		height: 18.5%;
 	}
-	.skills-box h3 {
-		font-size: 1.25rem !important;
-		padding: 10px 25px 0;
-		line-height:;
+	.skillboxh3-top {
+	    line-height: 30px;
 	}
+	.skillboxh3-bottom {
+        line-height: 29px;
+    }
+	.skills-box h3 {
+		font-size: 1.45rem;
+		padding: 10px 25px 0;
+	}
+	.skillbox-span {
+        font-size: 20.5px;
+    }
+    .skillbox-span2 {
+        font-size: 19px;
+    }
 	#content {
-		height: 1060vh;
+		height: 1960vh;
 	}
 	#footer-contact {
 		font-size: 3.25em;
@@ -229,6 +246,11 @@
             line-height: 16.5px;
         }
 }
+@media only screen and (max-width: 480px) {
+    .projects h1 {
+        font-size: 2.5em;
+    }
+}
 @media only screen and (max-width: 451px) {
     .modal-body .tab-content {
         display: none;
@@ -236,11 +258,19 @@
     .modal-title {
         font-size: 18px;
     }
-
+    #banner-h2 {
+        font-size: 19px;
+    }
+    .projects h1 {
+        font-size: 2.2em;
+    }
+    #skillbox-desktopapp {
+        font-size: 1.75em;
+    }
 }
 @media only screen and (min-width: 500px) {
 	#content {
-		height: 1950vh;
+		height: 2195vh;
 	}
 	.tab-pane img {
             width: 16rem;
@@ -258,15 +288,63 @@
     #moreProjects-btn {
         width: 40%;
     }
+    #about-section h1 {
+        font-size: 5em;
+    }
+    .about-me {
+        font-size: 7.5em;
+    }
+}
+@media only screen and (max-width: 510px) {
+    #contact-right h2 {
+        font-size: 1.3em;
+    }
 }
 @media only screen and (max-width: 452px) {
     #moreProjects-btn {
         width: 50%;
     }
+    #about-section h1 {
+        font-size: 4em;
+    }
+    .about-me {
+        font-size: 6.5em;
+    }
+}
+@media only screen and (max-width: 430px) {
+    #contact-right h2 {
+        font-size: 1.2em;
+    }
+}
+@media only screen and (max-width: 405px) {
+    #banner-h2 {
+        font-size: 16px;
+    }
+    #contact-right h2 {
+        font-size: 1.05em;
+    }
+    .projects h1 {
+            font-size: 2em;
+    }
 }
 @media only screen and (max-width: 368px) {
     #moreProjects-btn {
         width: 60%;
+    }
+    #about-section h1 {
+        font-size: 3em;
+    }
+    .about-me {
+        font-size: 5.5em;
+    }
+    #banner-h2 {
+        font-size: 13.5px;
+    }
+    #contact-right h2 {
+        font-size: 0.95em;
+    }
+    #skillbox-desktopapp {
+        font-size: 1.6em;
     }
 }
 @media only screen and (min-width: 530px) {
@@ -306,7 +384,7 @@
 /*don't forget to add responsive code for devices 575px and above and under 900px*/
 @media only screen and (min-width: 900px) {
 	#content {
-		height: 605vh;
+		height: 660vh;
 	}
 	#banner-h2 {
 		font-size: 28px;
@@ -327,10 +405,21 @@
 	#name-responsive {
 		display: none;
 	}
+	#about-section h1 {
+    	    font-size: 12em;
+    	}
 	.text {
 		font-size: 1.15em;
 	}
 	.previous, .nexxt {
 		padding: 16px;
 	}
+	.tab-pane img {
+        width: 22.5rem;
+        height: 215px;
+    }
+    .projectModalRight p {
+            font-size: 16px;
+            line-height: 19.5px;
+        }
 }

@@ -59,7 +59,8 @@ a {
 		text-decoration: none;
 		color: black;
 		bottom: 0;
-		font-size: 1.5em;
+		text-transform: uppercase;
+		font-size: 1.3em;
 		font-family: Franklin Gothic Medium,
 			Franklin Gothic,ITC Franklin Gothic,
 			Arial,sans-serif;
@@ -68,7 +69,7 @@ a {
 		-webkit-backface-visibility: hidden;
 		-moz-backface-visibility: hidden;
 		backface-visibility: hidden;
-		transition:0.5s color ease;
+		transition: 0.5s color ease;
 		text-decoration: none;
 	}
 	.navbar-nav a:hover {
@@ -113,10 +114,11 @@ a {
 	}
 	.square {
 		float: left;
-		font-size: 2.8em;
+		font-size: 2.5em;
 		font-weight: 500;
 		line-height: 1.1em;
-		letter-spacing:1px;
+		letter-spacing: 1px;
+		text-transform: uppercase;
 	    font-family: 'Inknut Antiqua', serif;
 		box-sizing: border-box;
 		position: relative;
@@ -136,7 +138,7 @@ a {
 	}
 	.square:before,.square:after{
 		content: "";
-		box-sizing:border-box;
+		box-sizing: border-box;
 		transition: 0.25s all ease;
 		-webkit-backface-visibility: hidden;
 		backface-visibility: hidden;
@@ -175,7 +177,6 @@ a {
 	}	
 		#header .navbar-nav li {
 			float: left;
-			font-size:;
 			margin: 0 0 0 50px;
 			list-style: none;
 		}
@@ -188,10 +189,9 @@ a {
 	height: 40.5em;
 }			
 	#banner {
-		height:;
-		position: relative ;
+		position: relative;
 		background-size: contain;
-		background-image: url(../images/colorado_view2.jpg);    
+		background-image: url(../images/colorado_view2_optimized.jpg);
 		background-repeat: no-repeat;
 		width: 100%;
 		height: 100%;
@@ -238,8 +238,9 @@ a {
 		margin-top: 1em;
 		letter-spacing: 1px;
 		font-family: 'Inknut Antiqua', serif;
-		font-size: 2.25em;
+		font-size: 2em;
 		font-weight: 500;
+		text-transform: uppercase;
 	}
 	#contact-right.in-view #fadein-contact1 {
 		-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
@@ -333,6 +334,7 @@ a {
 		color:black;
 		margin: 80px 80px 10px;
 		text-shadow: 3px 2px 1px #595959;
+		text-transform: uppercase;
 		position: relative;
 	}
 	.bounce-up .subject {
@@ -654,9 +656,10 @@ a {
 			    box-shadow: 1.1px 1.2px #595959;
 			}
 				.projects h1 {
-					font-size: 3em;
 					text-align: center;
 					text-shadow: 0 3px 3px rgba(0,0,0,0.9);
+					text-transform: uppercase;
+					font-size: 2.75em;
 					font-family: 'Inknut Antiqua', serif;
 					line-height: 70px;
 					padding-top: 2px;
@@ -771,7 +774,8 @@ a {
 						.previous, .nexxt {font-size: 11px}
 					}
 			#coding-github-btn {
-				font-size: 1.35em;
+			    text-transform: uppercase;
+				font-size: 1em;
 				font-weight: 400;
 				background: #00004d;
 				border: 1px solid #00004d;
@@ -785,8 +789,9 @@ a {
 				color: #00004d;
 			}	
 			#moreProjects-btn {
-				font-size: 1.175em;
-				font-weight: 500;
+			    text-transform: uppercase;
+				font-size: 0.85em;
+				font-weight: 600;
 				width: 30%;
 				background: #ffdb4d;
 				border: 1px solid #ffdb4d;
@@ -825,11 +830,11 @@ a {
 			.skills-box h2 {
 				text-align: center;
 				height: 16%;
-				font-size: 21.5px;
+				font-size: 19px;
+				text-transform: uppercase;
 				padding-top: 4px;
 				font-family: 'Josefin Sans', sans-serif;
 				border-radius: 4px;
-				/*border: .5px solid black;*/
 			}
 			.skills-box .skillboxp {
 				text-align: center;
@@ -839,19 +844,31 @@ a {
 				font-family: 'Courgette', cursive;
 				line-height: 18px;
 				padding: 15px 10px 0;
-				/*border: .5px solid black;*/
 			}
+			.skillboxh3-top {
+			    line-height: 20px;
+			}
+			.skillboxh3-bottom {
+                line-height: 22px;
+             }
 			.skills-box h3 {
 				text-align: center;
 				font-size: 14.5px;
 				height: 6em;
 				font-weight: normal;
-				line-height: 18px;
 				padding: 10px 5px 0;
-				/*border: .5px solid black;*/
 			}
+			.skillbox-span {
+			    text-transform: uppercase;
+			    font-size: 12.6px;
+			}
+			.skillbox-span2 {
+                text-transform: uppercase;
+                font-size: 13.4px;
+             }
 			.og-height {
-				font-size: 20px;
+			    text-transform: uppercase;
+				font-size: 18px;
 				color: #002d4d;
 			}
 			.og-color {
@@ -921,7 +938,8 @@ a {
 				.skills-contact {
 					text-decoration: underline;
 					color: #e6b800;
-					font-size: 20px;	
+					font-size: 18px;
+					text-transform: uppercase;
 				}
 				#tournament-link, #tournament-link:hover {
 					cursor: not-allowed;
@@ -943,6 +961,7 @@ a {
 					text-align: center;
 					width: 100%;
 					height: 1.5em;
+					text-transform: uppercase;
 					/*border: .5px solid black;*/
 				}
 				.op-fullbackground {
@@ -1155,7 +1174,7 @@ footer {
 					.footer-nav li {
 						display: flex;
 						width: 4.85em;
-						align-items: center; 
+						align-items: center;
 						justify-content: center;
 						text-decoration: underline;
 					}
@@ -1168,10 +1187,9 @@ footer {
 					.footer-nav li a:hover {
 						opacity: 0.75;
 					}
-					
 					.footer-smallnav {
 						font-size:0.48em;
-					}		
+					}
 			.footer-right {
 			
 			}
