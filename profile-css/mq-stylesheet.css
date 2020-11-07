@@ -201,7 +201,7 @@
 }
 @media only screen and (min-width: 362px) {
 	#content {
-		height: 2220vh;
+		height: 2190vh;
 	}
 	.square {
 		display: none;
@@ -267,7 +267,7 @@
 }
 @media only screen and (min-width: 500px) {
 	#content {
-		height: 2205vh;
+		height: 2960vh;
 	}
 	.tab-pane img {
             width: 16rem;
@@ -372,7 +372,7 @@
 		opacity: 1;
 	}
 	#content {
-		height: 1985vh;
+		height: 1935vh;
 	}
 	.modal-title {
         font-size: 25px;
@@ -381,7 +381,7 @@
 /*don't forget to add responsive code for devices 575px and above and under 900px*/
 @media only screen and (min-width: 900px) {
 	#content {
-		height: 645vh;
+		height: 630vh;
 	}
 	#banner-h2 {
 		font-size: 28px;
