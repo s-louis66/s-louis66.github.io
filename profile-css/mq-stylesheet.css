@@ -201,7 +201,7 @@
 }
 @media only screen and (min-width: 362px) {
 	#content {
-		height: 17150vh;
+		height: 2220vh;
 	}
 	.square {
 		display: none;
@@ -267,7 +267,7 @@
 }
 @media only screen and (min-width: 500px) {
 	#content {
-		height: 2210vh;
+		height: 2205vh;
 	}
 	.tab-pane img {
             width: 16rem;
@@ -372,7 +372,7 @@
 		opacity: 1;
 	}
 	#content {
-		height: 2315vh;
+		height: 1985vh;
 	}
 	.modal-title {
         font-size: 25px;
