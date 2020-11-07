@@ -172,7 +172,7 @@
         font-size: 19px;
     }
 	#content {
-		height: 1960vh;
+		height: 1910vh;
 	}
 	#footer-contact {
 		font-size: 3.25em;
@@ -204,7 +204,7 @@
 }
 @media only screen and (min-width: 362px) {
 	#content {
-		height: 1700vh;
+		height: 1680vh;
 	}
 	.square {
 		display: none;
@@ -384,7 +384,7 @@
 /*don't forget to add responsive code for devices 575px and above and under 900px*/
 @media only screen and (min-width: 900px) {
 	#content {
-		height: 660vh;
+		height: 645vh;
 	}
 	#banner-h2 {
 		font-size: 28px;
