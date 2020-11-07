@@ -171,9 +171,6 @@
     .skillbox-span2 {
         font-size: 19px;
     }
-	#content {
-		height: 1910vh;
-	}
 	#footer-contact {
 		font-size: 3.25em;
 		text-align: center;
@@ -204,7 +201,7 @@
 }
 @media only screen and (min-width: 362px) {
 	#content {
-		height: 1680vh;
+		height: 17150vh;
 	}
 	.square {
 		display: none;
@@ -270,7 +267,7 @@
 }
 @media only screen and (min-width: 500px) {
 	#content {
-		height: 2195vh;
+		height: 2210vh;
 	}
 	.tab-pane img {
             width: 16rem;
@@ -375,7 +372,7 @@
 		opacity: 1;
 	}
 	#content {
-		height: 2285vh;
+		height: 2315vh;
 	}
 	.modal-title {
         font-size: 25px;
