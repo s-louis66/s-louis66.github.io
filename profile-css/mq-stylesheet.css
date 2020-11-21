@@ -1,3 +1,6 @@
+@media only screen and (max-width: 900px) {
+
+}
 /*profile page media queries*/
 @media only screen and (max-width: 575px) {
 	#header .navbar-nav {
@@ -201,7 +204,7 @@
 }
 @media only screen and (min-width: 362px) {
 	#content {
-		height: 1625vh;
+		height: 1700vh;
 	}
 	.square {
 		display: none;
@@ -231,17 +234,13 @@
     .modal-title {
         font-size: 20px;
     }
-    .tab-pane img {
-            width: 15rem;
-            height: 215px;
-        }
-        .projectModalRight {
-            padding:0 0 0 35px;
-        }
-        .projectModalRight p {
-            font-size: 12px;
-            line-height: 16.5px;
-        }
+    .projectModalRight {
+        padding:0 0 0 35px;
+    }
+    .projectModalRight p {
+        font-size: 12px;
+        line-height: 16.5px;
+    }
 }
 @media only screen and (max-width: 480px) {
     .projects h1 {
@@ -267,19 +266,15 @@
 }
 @media only screen and (min-width: 500px) {
 	#content {
-		height: 1600vh;
+		height: 2195vh;
 	}
-	.tab-pane img {
-            width: 16rem;
-            height: 215px;
-        }
-        .projectModalRight {
-            padding:0 0 0 35px;
-        }
-        .projectModalRight p {
-            font-size: 12px;
-            line-height: 16.5px;
-        }
+    .projectModalRight {
+        padding:0 0 0 35px;
+    }
+    .projectModalRight p {
+        font-size: 12px;
+        line-height: 16.5px;
+    }
 }
 @media only screen and (max-width: 535px) {
     #moreProjects-btn {
@@ -306,6 +301,16 @@
     }
     .about-me {
         font-size: 6.5em;
+    }
+}
+@media only screen and (max-width: 451px) {
+    #carousel-mainProfilePage .navLinkWeb {
+        width: 20em;
+        height: 170px;
+    }
+    #carousel-mainProfilePage .navLinkResponsive {
+        width: 9em;
+        height: 170px;
     }
 }
 @media only screen and (max-width: 430px) {
@@ -344,20 +349,47 @@
         font-size: 1.6em;
     }
 }
+@media only screen and (min-width: 450px) {
+    .tab-pane .modalImgWidthWeb {
+        width: 15em;
+    }
+    .tab-pane .modalImgWidthResponsive {
+        width: 7em;
+    }
+    .tab-pane img {
+        height: 180px;
+    }
+}
+@media only screen and (min-width: 500px) {
+    .tab-pane .modalImgWidthWeb {
+        width: 17em;
+    }
+    .tab-pane .modalImgWidthResponsive {
+        width: 7em;
+    }
+    .tab-pane img {
+        height: 180px;
+    }
+}
 @media only screen and (min-width: 530px) {
 	.text {
 		font-size:1.45em;
 	}
-	.tab-pane img {
-        width: 18rem;
-        height: 215px;
-    }
     .projectModalRight {
         padding:0 0 0 35px;
     }
     .projectModalRight p {
         font-size: 12px;
         line-height: 16.5px;
+    }
+    .tab-pane .modalImgWidthWeb {
+        width: 17.5em;
+    }
+    .tab-pane .modalImgWidthResponsive {
+        width: 9em;
+    }
+    .tab-pane img {
+        height: 200px;
     }
 }
 /*don't forget to add responsive code for devices 575px and above and under 900px*/
@@ -372,7 +404,7 @@
 		opacity: 1;
 	}
 	#content {
-		height: 1585vh;
+		height: 2285vh;
 	}
 	.modal-title {
         font-size: 25px;
@@ -381,7 +413,7 @@
 /*don't forget to add responsive code for devices 575px and above and under 900px*/
 @media only screen and (min-width: 900px) {
 	#content {
-		height: 630vh;
+		height: 650vh;
 	}
 	#banner-h2 {
 		font-size: 28px;
@@ -411,12 +443,17 @@
 	.previous, .nexxt {
 		padding: 16px;
 	}
+	.tab-pane .modalImgWidthWeb {
+        width: 29em;
+    }
+    .tab-pane .modalImgWidthResponsive {
+        width: 11em;
+    }
 	.tab-pane img {
-        width: 22.5rem;
-        height: 215px;
+        height: 245px;
     }
     .projectModalRight p {
-            font-size: 16px;
-            line-height: 19.5px;
-        }
+        font-size: 16px;
+        line-height: 19.5px;
+    }
 }
