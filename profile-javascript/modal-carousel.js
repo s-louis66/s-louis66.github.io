@@ -107,7 +107,7 @@ CC 2.0 License Iatek LLC 2018 - Attribution required
 */
 	var $e = $(e.relatedTarget);
 	var idx = $e.index();
-	var itemsPerSlide = 5;
+	var itemsPerSlide = 3;
 	var totalItems = $('.carousel-item5').length;
 
 	 if (idx >= totalItems-(itemsPerSlide-1)) {
@@ -194,6 +194,31 @@ CC 2.0 License Iatek LLC 2018 - Attribution required
 			}
 			else {
 				$('.carousel-item8').eq(0).appendTo('.carousel-inner8');
+			}
+		}
+	}
+});
+/*
+Carousel-9
+*/
+$('#carousel-javaTwitterPage').on('slide.bs.carousel', function (e) {
+/*
+CC 2.0 License Iatek LLC 2018 - Attribution required
+*/
+	var $e = $(e.relatedTarget);
+	var idx = $e.index();
+	var itemsPerSlide = 5;
+	var totalItems = $('.carousel-item9').length;
+
+	 if (idx >= totalItems-(itemsPerSlide-1)) {
+		var it = itemsPerSlide - (totalItems - idx);
+		for (var i=0; i<it; i++) {
+			// append slides to end
+			if (e.direction=="left") {
+				$('.carousel-item9').eq(i).appendTo('.carousel-inner9');
+			}
+			else {
+				$('.carousel-item9').eq(0).appendTo('.carousel-inner9');
 			}
 		}
 	}
