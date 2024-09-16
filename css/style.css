@@ -82,6 +82,12 @@
     font-weight: normal;
 }
 
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
 /*** Navbar ***/
 .navbar .dropdown-toggle::after {
     border: none;
