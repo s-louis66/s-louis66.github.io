@@ -406,6 +406,7 @@
     color: var(--dark);
     cursor: pointer;
     transition: .5s;
+    -webkit-transition: .5s;
     border-bottom: 2px solid transparent;
 }
 
@@ -417,10 +418,12 @@
 
 .portfolio-item img {
     transition: .5s;
+    -webkit-transition: .5s;
 }
 
 .portfolio-item:hover img {
     transform: scale(1.1);
+    -webkit-transform: scale(1.1);
 }
 
 .portfolio-item .portfolio-overlay {
@@ -434,6 +437,7 @@
     left: 50%;
     background: rgba(53, 53, 53, .7);
     transition: .5s;
+    -webkit-transition: .5s;
 }
 
 .portfolio-item:hover .portfolio-overlay {
