@@ -82,6 +82,7 @@
     font-weight: normal;
 }
 
+
 /*** Navbar ***/
 .navbar .dropdown-toggle::after {
     border: none;
@@ -415,7 +416,9 @@
     color: var(--primary);
     border-color: var(--primary);
 }
-
+.portfolio-item {
+    display: none; 
+}
 .portfolio-item img {
     transition: .5s;
     -webkit-transition: .5s;
@@ -453,7 +456,9 @@
 .portfolio-item:hover .portfolio-overlay .btn {
     opacity: 1;
 }
-
+.show {
+  display: inline-block;
+}
 
 /*** Quote ***/
 @media (min-width: 992px) {
